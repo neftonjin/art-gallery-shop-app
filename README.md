@@ -1,3 +1,3 @@
 # art-gallery-shop-app
 
-# team reactManiacs
+## team reactManiacs
