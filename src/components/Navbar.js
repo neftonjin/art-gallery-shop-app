@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 import CottageTwoToneIcon from '@mui/icons-material/CottageTwoTone';
 export default function Navbar() {
