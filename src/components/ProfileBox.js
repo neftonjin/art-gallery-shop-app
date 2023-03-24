@@ -1,7 +1,7 @@
 import React from 'react'
-import { Typography, Button, AppBar, Card, CardContent, CardActions, CardMedia, CssBaseline, Grid, Toolbar, Container } from "@mui/material";
+import { Typography, Button, Card, CssBaseline, Grid, Container } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
-import { deepOrange, deepPurple } from '@mui/material/colors';
+import { deepPurple } from '@mui/material/colors';
 
 export default function ProfileBox() {
   return (
