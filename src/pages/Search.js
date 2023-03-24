@@ -1,3 +1,7 @@
+import React from "react";
+
 export const Search = () => {
-    return <h1> Search</h1>;
+    return <div className="App"><h1> THIS IS THE HOME PAGE</h1></div>;
   };
+
+  export default Search;
