@@ -1,3 +1,12 @@
+import React from "react";
+
+
 export const Home = () => {
-    return <h1> THIS IS THE HOME PAGE</h1>;
-  };
+
+  const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+  return (
+    <div>Home Page</div>
+  )
+};
