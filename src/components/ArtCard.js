@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Button, AppBar, Card, CardContent, CardActions, CardMedia, CssBaseline, Grid, Toolbar, Container } from "@mui/material";
+import { Typography, Button, Card, CardContent, CardActions, CardMedia, Grid } from "@mui/material";
 
 export default function ArtCard() {
   return (
