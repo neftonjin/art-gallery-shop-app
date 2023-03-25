@@ -1,4 +1,4 @@
-import React from "react";
+
 import ArtCard from "../components/ArtCard";
 import ProfileBox from "../components/ProfileBox";
 import ImageGrid from "../components/ImageGrid";
