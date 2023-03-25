@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { User } from "./pages/User";
 import { Search } from "./pages/Search";
 import * as React from 'react';
+
 // import UploadForm from "./components/UploadForm";
 
 // import Album from './testComponents/Album';
@@ -12,8 +13,9 @@ import * as React from 'react';
 
 
 export default function App() {
-  return (
+  return (<>
     <div className="App">
+      
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +25,9 @@ export default function App() {
         </Routes>
       </Router>
       
+      
     </div>
+    </>
   );
 }
 
