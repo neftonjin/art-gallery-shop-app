@@ -1,12 +1,24 @@
+:root{
+    --primary: skyblue;
+    --secondary: #4e4e4e;
+    --error: #ff4a4a;
+  }
 *{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
 }
-a{color: skyblue;}
+
+.title h2, .title p{
+    text-align: center;
+  }
+  .title h2{
+    margin-top: 60px;
+    font-size: 2.6rem;
+  }
 
 .progress-bar{
-    background-color: skyblue;
+    background-color: var(--primary);
     height: 5px;
     margin-top: 20px;
     padding-bottom: 1.25rem;
