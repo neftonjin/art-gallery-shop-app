@@ -5,13 +5,16 @@ import { User } from "./pages/User";
 import Navbar from './components/Navbar';
 import { Search } from "./pages/Search";
 import * as React from 'react';
+
+// import UploadForm from "./components/UploadForm";
+
 // import Album from './testComponents/Album';
 // import SignIn from './testComponents/SignIn';
 
 
 
 export default function App() {
-  return (
+  return (<>
     <div className="App">
       <Navbar />
       <Router>
@@ -22,7 +25,10 @@ export default function App() {
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
         </Routes>
       </Router>
+      
+      
     </div>
+    </>
   );
 }
 
