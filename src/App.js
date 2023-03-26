@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import { Search } from "./pages/Search";
 import * as React from 'react';
 
+
 // import UploadForm from "./components/UploadForm";
 
 // import Album from './testComponents/Album';
@@ -17,6 +18,7 @@ export default function App() {
   return (<>
     <div className="App">
       <Navbar />
+      
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
