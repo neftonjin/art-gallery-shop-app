@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 // import firebase from 'firebase/compat/app';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import {  getAuth } from 'firebase/auth';
+import  { useNavigate} from 'react-router-dom'
+import { AuthContext } from '../context/AuthContext';
 const Login = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState(false);
   const [password, setPassword] = useState(false);
+
+  const navigateTo = useNavigate()
+  const {dispatch} = useContext(AuthContext)
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -14,7 +19,9 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
+        dispatch({type:"LOGIN", payload:user})
         console.log(user);
+        navigateTo("/User");
         // ...
       })
       .catch((error) => {

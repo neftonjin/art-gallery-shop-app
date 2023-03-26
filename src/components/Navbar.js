@@ -6,7 +6,7 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
         <Button variant="h6">Artflow</Button>
-          
+          <a href='./Login'>Login</a>
           <div style={{ flexGrow: 1 }} />
           <IconButton aria-label="SearchTwoToneIcon">
       <SearchTwoToneIcon />
