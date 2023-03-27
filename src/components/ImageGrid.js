@@ -1,12 +1,14 @@
 import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
+import { AuthContext } from "../context/AuthContext";
+import { useContext } from "react";
+
 
 const ImageGrid = ({ setSelectedImg }) => {
-  const { docs } = useFirestore('images');
-  // docs.forEach((doc)=>{
-  //   console.log(" this is the docs" + doc.id);
-  // })
+  const { currentUser :{uid}} = useContext(AuthContext);
+  const { docs } = useFirestore('images' ,uid);
+  
   
   return (
     

@@ -10,9 +10,10 @@ const useStorage = (file) => {
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
   const { currentUser :{uid}} = useContext(AuthContext);
-  const category="landscape";
   
-  console.log(category ,uid );
+  
+  console.log(uid );// User Id 
+  
   useEffect(() => {
     // references
     const storageRef = projectStorage.ref(file.name);
