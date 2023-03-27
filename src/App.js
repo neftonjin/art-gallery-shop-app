@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
-import Navbar from './components/Navbar';
+import PrimarySearchAppBar from './components/Navbar';
 import { Search } from "./pages/Search";
 import * as React from 'react';
 
@@ -16,7 +16,7 @@ import * as React from 'react';
 export default function App() {
   return (<>
     <div className="App">
-      <Navbar />
+      <PrimarySearchAppBar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
