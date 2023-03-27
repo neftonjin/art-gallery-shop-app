@@ -11,7 +11,6 @@ import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
 // import { BrowserRouter } from 'react-router-dom';
 // import UploadForm from "./components/UploadForm";
-
 // import Album from './testComponents/Album';
 // import SignIn from './testComponents/SignIn';
 
