@@ -4,10 +4,16 @@ import { motion } from 'framer-motion';
 
 const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images');
-
+  // docs.forEach((doc)=>{
+  //   console.log(" this is the docs" + doc.id);
+  // })
+  
   return (
+    
     <div className="img-grid">
       {docs && docs.map(doc => (
+
+        
         <motion.div className="img-wrap" key={doc.id} 
           layout
           whileHover={{ opacity: 1 }}s

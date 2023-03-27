@@ -9,6 +9,7 @@ import { Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
+// import { BrowserRouter } from 'react-router-dom';
 // import UploadForm from "./components/UploadForm";
 
 // import Album from './testComponents/Album';
@@ -18,12 +19,14 @@ import { useContext } from "react";
 
 export default function App() {
 
+ 
+  const {currentUser}=useContext(AuthContext);
 
-  const {currentUser}=useContext(AuthContext)
   const RequireAuth = ({children})=> {
    return currentUser ? children : <Navigate to="/" />;
   }
-  console.log(currentUser);
+  // console.log(currentUser.uid);
+  console.log("Current user object is "+ currentUser);
   return (<>
     <div className="App">
       <Navbar />
@@ -32,7 +35,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={ <Home />} />
           <Route path="/Login"  element={<Login />} />
-          <Route path="/User" element={<RequireAuth><User /></RequireAuth>  } />
+          <Route path="/User" element={<RequireAuth> <User /> </RequireAuth> } />
           <Route path="/Search" element={<Search />} />
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
         </Routes>
