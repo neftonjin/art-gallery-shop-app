@@ -9,7 +9,7 @@ const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
-  const { currentUser :{uid}} = useContext(AuthContext);
+  const { currentUser :{uid , email}} = useContext(AuthContext);
   
   
   console.log(uid );// User Id 
@@ -30,7 +30,7 @@ const useStorage = (file) => {
       const downloadUrl = await uploadTask.snapshot.ref.getDownloadURL();
       const createdAt = timestamp();
       
-      await collectionRef.add({ url: downloadUrl, createdAt, uid});
+      await collectionRef.add({ url: downloadUrl, createdAt, uid , email});
       setUrl(downloadUrl);
     });
     
@@ -38,7 +38,7 @@ const useStorage = (file) => {
       // Clean up the upload task if the component unmounts
       uploadTask.cancel();
     }
-  }, [file,uid]);
+  }, [file,uid,email]);
 
   return { progress, url, error };
 };

@@ -4,11 +4,14 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import {  getAuth } from 'firebase/auth';
 import  { useNavigate} from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext';
+
+
 const Login = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState(false);
   const [password, setPassword] = useState(false);
-
+   //add state variable
+  
   const navigateTo = useNavigate()
   const {dispatch} = useContext(AuthContext)
 
@@ -21,6 +24,8 @@ const Login = () => {
         const user = userCredential.user;
         dispatch({type:"LOGIN", payload:user})
         console.log(user);
+        console.log(user.email)
+        
         navigateTo("/User");
         // ...
       })
@@ -29,8 +34,15 @@ const Login = () => {
         // ..
       });
   };
-  return (
+
+
+
+
+  return (<>
+   
+
     <div className="login">
+      
       <form onSubmit={handleLogin}>
         <input type="email" placeholder="email"  onChange={e=>setEmail(e.target.value)}/>
         <input type="password" placeholder="password" onChange={e=>setPassword(e.target.value)}/>
@@ -39,8 +51,9 @@ const Login = () => {
           <span className="error_message">Wrong email or password</span>
         )}
       </form>
+      
     </div>
-  );
+    </>);
 };
 
 export default Login;
