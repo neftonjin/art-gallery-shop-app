@@ -1,13 +1,21 @@
 import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
+import { AuthContext } from "../context/AuthContext";
+import { useContext } from "react";
+
 
 const ImageGrid = ({ setSelectedImg }) => {
-  const { docs } = useFirestore('images');
-
+  const { currentUser :{uid}} = useContext(AuthContext);
+  const { docs } = useFirestore('images' ,uid);
+  
+  
   return (
+    
     <div className="img-grid">
       {docs && docs.map(doc => (
+
+        
         <motion.div className="img-wrap" key={doc.id} 
           layout
           whileHover={{ opacity: 1 }}s

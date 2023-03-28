@@ -26,7 +26,7 @@ export default function ProfileBox() {
                   </Typography>
                   <Grid container spacing={10} justifyContent="center">
                       <Grid item>
-                          <Button variant="contained" color="primary">My Art</Button>
+                          <Button variant="contained" color="primary"><a href='/'>My Art</a></Button>
                       </Grid>
                       <Grid item>
                           <Button variant="contained" color="secondary">Connect</Button>
