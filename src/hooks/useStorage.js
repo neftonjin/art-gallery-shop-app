@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { projectStorage, projectFirestore, timestamp } from '../firebase/firebase.config';
+import { AuthContext } from "../context/AuthContext";
+import { useContext } from "react";
 
 
 
@@ -7,7 +9,11 @@ const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
-
+  const { currentUser :{uid , email}} = useContext(AuthContext);
+  
+  
+  console.log(uid );// User Id 
+  
   useEffect(() => {
     // references
     const storageRef = projectStorage.ref(file.name);
@@ -23,7 +29,8 @@ const useStorage = (file) => {
     }, async () => {
       const downloadUrl = await uploadTask.snapshot.ref.getDownloadURL();
       const createdAt = timestamp();
-      await collectionRef.add({ url: downloadUrl, createdAt });
+      
+      await collectionRef.add({ url: downloadUrl, createdAt, uid , email});
       setUrl(downloadUrl);
     });
     
@@ -31,7 +38,7 @@ const useStorage = (file) => {
       // Clean up the upload task if the component unmounts
       uploadTask.cancel();
     }
-  }, [file]);
+  }, [file,uid,email]);
 
   return { progress, url, error };
 };
