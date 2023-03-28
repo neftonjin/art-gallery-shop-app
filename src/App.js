@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
+import { MyProfile } from "./pages/MyProfile"
 import PrimarySearchAppBar from './components/Navbar';
 import { Search } from "./pages/Search";
 import * as React from 'react';
@@ -18,31 +19,31 @@ import { useContext } from "react";
 
 export default function App() {
 
- 
-  const {currentUser}=useContext(AuthContext);
 
-  const RequireAuth = ({children})=> {
-   return currentUser ? children : <Navigate to="/" />;
+  const { currentUser } = useContext(AuthContext);
+
+  const RequireAuth = ({ children }) => {
+    return currentUser ? children : <Navigate to="/" />;
   }
   // console.log(currentUser.uid);
-  console.log("Current user object is "+ currentUser);
+  console.log("Current user object is " + currentUser);
   return (<>
     <div className="App">
       <PrimarySearchAppBar />
       <Router>
-      <Routes>
-          <Route path="/" element={ <Home />} />
-          <Route path="/Login"  element={<Login />} />
-          <Route path="/User" element={<RequireAuth> <User /> </RequireAuth> } />
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/User" element={<RequireAuth> <User /> </RequireAuth>} />
+          <Route path="/MyProfile" element={<MyProfile />} />
           <Route path="/Search" element={<Search />} />
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
-          </Routes>
+        </Routes>
       </Router>
-      
-      
+
+
     </div>
-    </>
+  </>
   );
 }
 

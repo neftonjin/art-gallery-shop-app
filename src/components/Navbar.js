@@ -11,6 +11,10 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import Logout from './Logout';
+import Login from './Login';
+
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -69,8 +73,17 @@ export default function PrimarySearchAppBar() {
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+
     handleMobileMenuClose();
   };
+
+  const goToProfile = () => {
+    window.location.href = "./MyProfile"
+  }
+
+  const signOut = () => {
+    console.log("Should sign you out but doesnt")
+  }
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
@@ -93,8 +106,8 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Log out</MenuItem>
+      <MenuItem onClick={goToProfile}>Profile</MenuItem>
+      <MenuItem onClick={signOut}>Log out</MenuItem>
     </Menu>
   );
 
@@ -115,7 +128,7 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-           
+
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -135,7 +148,7 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          
+
           <Typography
             variant="h6"
             noWrap
@@ -153,9 +166,10 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
+          <Logout></Logout>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-             <IconButton
+            <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"

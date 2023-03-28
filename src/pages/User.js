@@ -1,27 +1,36 @@
 
-import ArtCard from "../components/ArtCard";
-import ProfileBox from "../components/ProfileBox";
-import ImageGrid from "../components/ImageGrid";
-import Modal from "../components/Modal";
-import UploadForm from "../components/UploadForm";
+
 import React, { useState } from 'react';
-import Title from "../components/Title";
+
+
+import ComplexCard from "../components/ComplexCard";
+import { Container } from "@mui/system";
+import Artists from '../Artists.json'
 
 
 export const User = () => {
-  const [selectedImg, setSelectedImg] = useState(null);
+  
     return (
       <>
-      <main>
-      <ProfileBox></ProfileBox>
-      <ArtCard></ArtCard>
-      <Title />
-      <UploadForm /> 
-      <ImageGrid setSelectedImg={setSelectedImg} />
-      { selectedImg && (
-        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
-      )}
-      </main>
+
+        <Container align="center">
+        {Artists.map((artist) => {
+          return (
+            <ComplexCard
+              artist={artist.artist}
+              artistAvatar={artist.artistAvatar}
+              image={artist.image}
+              title={artist.title}
+              description={artist.description}
+              expandedDescription={artist.expandedDescription}
+
+            >
+            </ComplexCard>
+          )
+        })}
+
+
+      </Container>
       </>
     )
   };
