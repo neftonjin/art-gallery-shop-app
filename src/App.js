@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
-import Navbar from './components/Navbar';
+import PrimarySearchAppBar from './components/Navbar';
 import { Search } from "./pages/Search";
 import * as React from 'react';
 import { Navigate } from "react-router-dom";
@@ -28,16 +28,16 @@ export default function App() {
   console.log("Current user object is "+ currentUser);
   return (<>
     <div className="App">
-      <Navbar />
-      
+      <PrimarySearchAppBar />
       <Router>
-        <Routes>
+      <Routes>
           <Route path="/" element={ <Home />} />
           <Route path="/Login"  element={<Login />} />
           <Route path="/User" element={<RequireAuth> <User /> </RequireAuth> } />
+
           <Route path="/Search" element={<Search />} />
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
-        </Routes>
+          </Routes>
       </Router>
       
       
