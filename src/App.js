@@ -18,12 +18,13 @@ export default function App() {
     <div className="App">
       <PrimarySearchAppBar />
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <Routes>
+                 <Route path="/" element={<Home />} />
           <Route path="/User" element={<User />} />
           <Route path="/Search" element={<Search />} />
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
-        </Routes>
+          </Routes>
+       
       </Router>
       
       
