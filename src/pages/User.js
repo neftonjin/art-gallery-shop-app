@@ -1,8 +1,4 @@
-
-
-import React, { useState } from 'react';
-
-
+import React from 'react';
 import ComplexCard from "../components/ComplexCard";
 import { Container } from "@mui/system";
 import Artists from '../Artists.json'
