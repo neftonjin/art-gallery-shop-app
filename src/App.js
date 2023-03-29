@@ -38,7 +38,7 @@ export default function App() {
         {/* <Route path="/Login" element={<Login />} /> */}
         <Route path="/user" element={<RequireAuth> <User /> </RequireAuth>} />
         <Route path="/myprofile" element={<RequireAuth><MyProfile /></RequireAuth>} />
-        <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+        {/* <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> */}
       </Routes>
 
       <Footer />

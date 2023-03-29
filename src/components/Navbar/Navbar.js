@@ -78,7 +78,7 @@ export default function PrimarySearchAppBar() {
   };
 
   const goToProfile = () => {
-    window.location.href = "./MyProfile"
+    window.location.href = "./myprofile"
   }
 
   const signOut = () => {
@@ -146,7 +146,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx={{ bgcolor: '#cdc6a5'}}position="static">
+      <AppBar sx={{ bgcolor: '#cdc6a5' }} position="static">
         <Toolbar>
 
           <Typography
@@ -154,8 +154,8 @@ export default function PrimarySearchAppBar() {
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', fontFamily: 'Homemade Apple', fontWeight: 'bold' } }}
-          ><a href='/User'className='logoLink'>
-            ArtFlow
+          ><a href='/user' className='logoLink'>
+              ArtFlow
             </a>
           </Typography>
           <Search>
@@ -167,7 +167,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          
+
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton

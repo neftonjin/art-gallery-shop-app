@@ -61,7 +61,7 @@ const Login = () => {
         console.log(user);
         console.log(user.email)
 
-        navigateTo("/User");
+        navigateTo("/user");
         // ...
       })
       .catch((error) => {
