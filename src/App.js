@@ -1,5 +1,5 @@
 
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
 import { MyProfile } from "./pages/MyProfile"
@@ -32,15 +32,15 @@ export default function App() {
   return (
     <div className="App">
       <PrimarySearchAppBar />
-      
-        <Routes>
-          <Route path="/" element={currentUser ?<Navigate to="/Myprofile" /> : <Home />} />
-          {/* <Route path="/Login" element={<Login />} /> */}
-          <Route path="/User" element={<RequireAuth> <User /> </RequireAuth>} />
-          <Route path="/MyProfile" element={<RequireAuth><MyProfile /></RequireAuth>} />
-          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
-        </Routes>
-     
+
+      <Routes>
+        <Route path="/" element={currentUser ? <Navigate to="/myprofile" /> : <Home />} />
+        {/* <Route path="/Login" element={<Login />} /> */}
+        <Route path="/user" element={<RequireAuth> <User /> </RequireAuth>} />
+        <Route path="/myprofile" element={<RequireAuth><MyProfile /></RequireAuth>} />
+        <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+      </Routes>
+
       <Footer />
 
 
