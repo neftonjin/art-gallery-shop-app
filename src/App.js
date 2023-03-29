@@ -1,10 +1,10 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { User } from "./pages/User";
 import { MyProfile } from "./pages/MyProfile"
 import PrimarySearchAppBar from './components/Navbar/Navbar';
-import { Search } from "./pages/Search";
+
 import * as React from 'react';
 import { Navigate } from "react-router-dom";
 // import Login from "./components/Login";
@@ -32,16 +32,15 @@ export default function App() {
   return (
     <div className="App">
       <PrimarySearchAppBar />
-      <Router>
+      
         <Routes>
           <Route path="/" element={currentUser ?<Navigate to="/Myprofile" /> : <Home />} />
           {/* <Route path="/Login" element={<Login />} /> */}
           <Route path="/User" element={<RequireAuth> <User /> </RequireAuth>} />
           <Route path="/MyProfile" element={<RequireAuth><MyProfile /></RequireAuth>} />
-          <Route path="/Search" element={<Search />} />
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
         </Routes>
-      </Router>
+     
       <Footer />
 
 
