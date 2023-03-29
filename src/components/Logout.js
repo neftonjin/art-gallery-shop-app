@@ -37,7 +37,7 @@ const Logout = () => {
     <>
       {isSignedIn && (
         <div>
-          <p>Your are log in as {userData}</p>
+          <p>Logged-in as {userData}</p>
           <button onClick={handleSignOut}>Sign Out</button>
         </div>
       )}
