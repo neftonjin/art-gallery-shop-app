@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
 import './App.css'
+import Footer from "./components/Footer/Footer";
 // import { BrowserRouter } from 'react-router-dom';
 // import UploadForm from "./components/UploadForm";
 // import Album from './testComponents/Album';
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
         </Routes>
       </Router>
+      <Footer />
 
 
     </div>

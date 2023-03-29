@@ -154,8 +154,9 @@ export default function PrimarySearchAppBar() {
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', fontFamily: 'Homemade Apple', fontWeight: 'bold' } }}
-          >
+          ><a href='/User'className='logoLink'>
             ArtFlow
+            </a>
           </Typography>
           <Search>
             <SearchIconWrapper>
