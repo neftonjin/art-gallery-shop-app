@@ -107,7 +107,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={goToProfile}>Profile</MenuItem>
-      <MenuItem onClick={signOut}>Log out</MenuItem>
+      <MenuItem onClick={signOut}><Logout /></MenuItem>
     </Menu>
   );
 
@@ -167,7 +167,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          <Logout></Logout>
+          
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton
