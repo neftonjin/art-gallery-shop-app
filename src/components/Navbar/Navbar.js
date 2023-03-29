@@ -11,8 +11,8 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import Logout from './Logout';
-
+import Logout from '../Logout';
+import './Navbar.css'
 
 
 
@@ -146,16 +146,17 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar sx={{ bgcolor: '#cdc6a5'}}position="static">
         <Toolbar>
 
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            Artflow
+            sx={{ display: { xs: 'none', sm: 'block', fontFamily: 'Homemade Apple', fontWeight: 'bold' } }}
+          ><a href='/User'className='logoLink'>
+            ArtFlow
+            </a>
           </Typography>
           <Search>
             <SearchIconWrapper>
