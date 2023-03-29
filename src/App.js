@@ -5,12 +5,13 @@ import { User } from "./pages/User";
 import { MyProfile } from "./pages/MyProfile"
 import PrimarySearchAppBar from './components/Navbar/Navbar';
 
+
 import * as React from 'react';
 import { Navigate } from "react-router-dom";
 // import Login from "./components/Login";
 import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
-import './App.css'
+
 import Footer from "./components/Footer/Footer";
 // import { BrowserRouter } from 'react-router-dom';
 // import UploadForm from "./components/UploadForm";
@@ -30,22 +31,24 @@ export default function App() {
   // console.log(currentUser.uid);
   console.log("Current user object is " + currentUser);
   return (
-    <div className="App">
-      <PrimarySearchAppBar />
+    <>
+      <div className="App">
+        <PrimarySearchAppBar />
 
-      <Routes>
-        <Route path="/" element={currentUser ? <Navigate to="/myprofile" /> : <Home />} />
-        {/* <Route path="/Login" element={<Login />} /> */}
-        <Route path="/user" element={<RequireAuth> <User /> </RequireAuth>} />
-        <Route path="/myprofile" element={<RequireAuth><MyProfile /></RequireAuth>} />
-        {/* <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> */}
-      </Routes>
+        <Routes>
+          <Route path="/" element={currentUser ? <Navigate to="/myprofile" /> : <Home />} />
+          {/* <Route path="/Login" element={<Login />} /> */}
+          <Route path="/user" element={<RequireAuth> <User /> </RequireAuth>} />
+          <Route path="/myprofile" element={<RequireAuth><MyProfile /></RequireAuth>} />
+          {/* <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> */}
+        </Routes>
 
+
+
+
+      </div>
       <Footer />
-
-
-    </div>
-
+    </>
   );
 }
 
