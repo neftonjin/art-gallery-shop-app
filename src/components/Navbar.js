@@ -107,7 +107,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={goToProfile}>Profile</MenuItem>
-      <MenuItem onClick={signOut}>Log out</MenuItem>
+      <MenuItem onClick={signOut}><Logout /></MenuItem>
     </Menu>
   );
 
