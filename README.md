@@ -2,7 +2,7 @@
   # Artflow
   
   ## Technologies
-![Figma] ![React] ![Router] ![Material UI] ![Firebase] ![Netlify] ![SCSS] ![Framer Motion] 
+Figma, React, React Router, Material, UI, Firebase, Netlify, SCSS, Framer Motion
 
 ## Contributing
   neftonjin, https://github.com/neftonjin
