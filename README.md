@@ -43,10 +43,13 @@
   ## Preview
 Demo of the user profile page
 <img src="/documentation/Profile.png" alt="Alt text" title="User Profile Page">
+
 Demo of the mobile login page
 <img src="/documentation/Login-mobile.png" alt="Alt text" title="Login Page Mobile">
+
 Demo of the desktop login page
-<img src="/documentation/Login-mobile.png" alt="Alt text" title="Login Page Desktop">
+<img src="/documentation/Login-desktop.png" alt="Alt text" title="Login Page Desktop">
+
 Demo of the homepage
 <img src="/documentation/homepage.png" alt="Alt text" title="Homepage">
 
