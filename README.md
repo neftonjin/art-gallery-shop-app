@@ -10,6 +10,10 @@ Figma, React, React Router, Material UI, Firebase, Netlify, SCSS
   macaulam, https://github.com/macaulam
 
   ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## Description  
+  This web-application provides a platform for artists to showcase their artwork in a secure and accessible manner. By facilitating the upload and display of visual media in a user-friendly format, it offers a valuable resource for both established and emerging artists seeking to promote their work. The application requires authentication via a user name and password, which enhances security and ensures the privacy of the users' content. While the current version does not feature a delete button, work is underway to implement this feature in future versions. This web-application is an innovative and effective solution for artists seeking to expand their online presence and showcase their work.
+  
 ## User Story
     As an artist I want to develop a web-application where I can securly login and upload my artwork. The uploaded artwork will be then displayed in an image gallery on my profile page. 
   
