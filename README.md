@@ -22,6 +22,10 @@
   ## Usage
   
   In order to use the application the user first needs to contact the admin and request a user name and password. After receiving the login details the user can then go to the home page of the application and login . Aftauthentification the user will be redirected to the profile page where he can upload his artwork by click the + button at the bottom of the page. When you click and upload an image a loading bar will show the progress of the upload. When the uploading is finished the image will automatically be rendered in the photogallery. You can add as many images as you like but be aware that only the administrator of the app can currently delete them.We are working on implementing the delete button which will be available in the futures versions.
+  
+  To demo the website use:
+  Login: abc@abc.com
+  Password: 1234567
 
   ## Limitation
     All uploaded images are stored in firebase database.The firebase account is currently on the free version and it only have 1.5gb bandwidth allowed per day. So if you upload too many pictures or too large and then you refresh the gallery too many times, the bandwidth will be consumed for the day and instead of the images in the gallery you will get broken links until the next day when the firebase resets the bandwidth.
