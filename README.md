@@ -1,14 +1,12 @@
 
   # Artflow
 
-  ## Team Name - REACT MANIACS
+## Contributing
   (neftonjin , JXG052 ,macaulam)
 
   ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
-  
-  ## Description
-  
-  This project is about a web-app where artist can securly login and upload their artwork. The uploaded artwork will then be displayed in a beatiful photogallery on the user`s profile page. 
+## User Story
+    As an artist I want to develop a web-application where I can securly login and upload my artwork. The uploaded artwork will be then displayed in an image gallery on my profile page. 
   
   ## Table of Contents
   
@@ -17,7 +15,7 @@
   - [License](#license)
   - [Questions](#questions)
   
-  ## Installation
+## Installation
   
   This web application does not require installation. 
   
