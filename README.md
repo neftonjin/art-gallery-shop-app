@@ -5,7 +5,9 @@
 Figma, React, React Router, Material UI, Firebase, Netlify
 
 ## Contributing
-  (neftonjin , JXG052 ,macaulam)
+  neftonjin, https://github.com/neftonjin
+  JXG052, https://github.com/JXG052
+  macaulam, https://github.com/macaulam
 
   ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## User Story
