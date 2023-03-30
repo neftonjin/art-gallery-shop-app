@@ -42,7 +42,7 @@
   
   ## Preview
 
-![Untitled](https://user-images.githubusercontent.com/25286630/228612165-1d19bcf9-f0ad-49ea-b2a7-6e17dc03535e.jpg)
+![Untitled]<img src="/documentation/Profile.png" alt="Alt text" title="Optional title">
 
 <img width="1647" alt="Untitled2" src="https://user-images.githubusercontent.com/25286630/228612993-dfa67fa2-da7d-4290-8fe0-d9149b4aeb25.png">
 
