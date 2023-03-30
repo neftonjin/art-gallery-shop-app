@@ -8,7 +8,7 @@
   
   ## Description
   
-  This Project is about a web-app where artist can securly login and upload their artwork. The uploaded artwork will then be displayed in a beatiful photogallery on the user`s profile page. 
+  This project is about a web-app where artist can securly login and upload their artwork. The uploaded artwork will then be displayed in a beatiful photogallery on the user`s profile page. 
   
   ## Table of Contents
   
@@ -19,7 +19,7 @@
   
   ## Installation
   
-  This web application does`n require installation. 
+  This web application does not require installation. 
   
   ## Usage
   
