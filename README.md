@@ -41,9 +41,13 @@
    https://github.com/neftonjin/art-gallery-shop-app  (GitHub)
   
   ## Preview
+Demo of the user profile page
+<img src="/documentation/Profile.png" alt="Alt text" title="User Profile Page">
+Demo of the mobile login page
+<img src="/documentation/Login-mobile.png" alt="Alt text" title="Login Page Mobile">
+Demo of the desktop login page
+<img src="/documentation/Login-mobile.png" alt="Alt text" title="Login Page Desktop">
+Demo of the homepage
+<img src="/documentation/homepage.png" alt="Alt text" title="Homepage">
 
-![Untitled]<img src="/documentation/Profile.png" alt="Alt text" title="Optional title">
 
-<img width="1647" alt="Untitled2" src="https://user-images.githubusercontent.com/25286630/228612993-dfa67fa2-da7d-4290-8fe0-d9149b4aeb25.png">
-
-<img width="1434" alt="Untitled3" src="https://user-images.githubusercontent.com/25286630/228613116-f303c95a-85fa-4c7a-99f7-030405814472.png">
