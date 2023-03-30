@@ -1,5 +1,8 @@
 
   # Artflow
+  
+  ## Technologies
+Figma, React, React Router, Material UI, Firebase, Netlify
 
 ## Contributing
   (neftonjin , JXG052 ,macaulam)
